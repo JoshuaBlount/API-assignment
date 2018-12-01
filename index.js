@@ -17,7 +17,7 @@ function displayResults(responseJson) {
     <li><a href='${responseJson[i].html_url}'>
     ${responseJson[i].name}</a>
     </li>
-    <h3>${responseJson.owner.login}</h3>
+    <h3>${responseJson[i].owner.login}</h3>
     `)
   
   $('#results').removeClass('hidden')
